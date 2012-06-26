@@ -1,0 +1,3 @@
+[submodule "aquarius/core"]
+	path = aquarius/core
+	url = git@github.com:aquaverde/aquarius-core.git
