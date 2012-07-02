@@ -1,6 +1,6 @@
-# Blank website using the Aquarius CMS
+# Blank website using the aquarius CMS
 
-This is a template that can be used to develop a Website using the Aquarius
+This is a template that can be used to develop a website using the aquarius
 CMS developed by [aquaverde GmbH](http://aquaverde.ch).
 
 
