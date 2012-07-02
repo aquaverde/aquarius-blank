@@ -1,2 +1,3 @@
 aquarius/cache/
 aquarius/config.local.php
+.DS_Store
