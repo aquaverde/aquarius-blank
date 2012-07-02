@@ -9,11 +9,17 @@ CMS developed by [aquaverde GmbH](http://aquaverde.ch).
 Assuming you're using Debian or a derivative.
 
 0. Become the webserver user 
+
         su www-data || sudo su www-data
+
 1. Clone this repository to your webroot (this example assumes /var/www)
+
         git clone --recursive git://github.com/aquaverde/aquarius-blank.git /var/www
+
 2. Enable maintenance mode
+
         /var/www/aquarius/core/bin/enable_maintenance 127.0.0.1
+
    This example assumes you'll be connecting from localhost.
 3. Browse to http://localhost/aquarius/core/backend/setup.php
 
