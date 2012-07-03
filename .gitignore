@@ -1,3 +1,4 @@
 aquarius/cache/
 aquarius/config.local.php
+aquarius/AQUARIUS_MAINTENANCE*
 .DS_Store

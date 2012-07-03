@@ -6,26 +6,27 @@ CMS developed by [aquaverde GmbH](http://aquaverde.ch).
 
 # Installation
 
-Assuming you're using Debian or a derivative.
-
-0. Become the webserver user 
-
-        su www-data || sudo su www-data
-
 1. Clone this repository to your webroot (this example assumes /var/www)
 
         git clone --recursive git://github.com/aquaverde/aquarius-blank.git /var/www
 
-2. Enable maintenance mode
+2. Enable maintenance mode by running
 
         /var/www/aquarius/core/bin/enable_maintenance 127.0.0.1
+   
+   This example assumes you'll be connecting from localhost. Instead, you may
+   create the file
+   
+        /var/www/aquarius/AQUARIUS_MAINTENANCE.CASUAL
 
-   This example assumes you'll be connecting from localhost.
-3. Browse to http://localhost/aquarius/core/backend/setup.php
+   This too enables maintenance mode. The second method is less secure. Both
+   methods will allow maintenance operations during two hours.
 
-To do serious work, you'll want to change the origin-remote of the
-repository to some other place, develop there, then push/pull changes to the
-server when they're ready.
+4. Ensure the Webserver has write-permissions on the aquarius-directory. This
+   depends on your setup. It's easiest when the user you use to administer the
+   files is the same as the webserver user.
+
+3. Browse to http://localhost/aquarius/core/backend/setup.php to start setup.
 
 
 # Changing the site
@@ -33,6 +34,10 @@ server when they're ready.
 Assuming the installation went well, you can browse 
 http://localhost/aquarius/admin/ to administer the site. To actually work on the
 site, you will have to modify the templates in /var/www/aquarius/templates.
+
+To do serious work, you'll want to change the origin-remote of the
+repository to some other place, develop there, then push/pull changes to the
+server when they're ready.
 
 
 # Licence
