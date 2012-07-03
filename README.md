@@ -6,18 +6,22 @@ CMS developed by [aquaverde GmbH](http://aquaverde.ch).
 
 # Installation
 
-1. Clone this repository to your webroot (this example assumes /var/www)
+0. Change to your webroot (this example uses /var/www)
 
-        git clone --recursive git://github.com/aquaverde/aquarius-blank.git /var/www
+        cd /var/www
+
+1. Clone this repository to your webroot
+
+        git clone --recursive git://github.com/aquaverde/aquarius-blank.git .
 
 2. Enable maintenance mode by running
 
-        /var/www/aquarius/core/bin/enable_maintenance 127.0.0.1
+        aquarius/core/bin/enable_maintenance 127.0.0.1
    
-   This example assumes you'll be connecting from localhost. Instead, you may
-   create the file
+   Assuming you'll be connecting from localhost. Instead, you may
+   create the file AQUARIUS_MAINTENANCE.CASUAL
    
-        /var/www/aquarius/AQUARIUS_MAINTENANCE.CASUAL
+        touch aquarius/AQUARIUS_MAINTENANCE.CASUAL
 
    This too enables maintenance mode. The second method is less secure. Both
    methods will allow maintenance operations during two hours.
