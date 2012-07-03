@@ -26,7 +26,7 @@ CMS developed by [aquaverde GmbH](http://aquaverde.ch).
    depends on your setup. It's easiest when the user you use to administer the
    files is the same as the webserver user.
 
-3. Browse to http://localhost/aquarius/core/backend/setup.php to start setup.
+3. Browse to http://localhost/aquarius/admin/setup.php to start setup.
 
 
 # Changing the site
