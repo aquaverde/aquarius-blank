@@ -18,17 +18,19 @@
     <meta name="author" content="aquaverde.ch" />
     <meta name="generator" content="CMS aquarius {$smarty.const.AQUARIUS_VERSION}" />
     <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico" />
-    <link type="image/png" rel="icon" href="/favicon.png" />    
-    <link href="/css/global.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="/css/form.css" rel="stylesheet" type="text/css" media="all" />
+    <link type="image/png" rel="icon" href="/favicon.png" />
+    {minify_includes}
+        /css/global.css
+        /css/form.css
+        /lib/inhouse/javascript.js
+        /lib/jquery/jquery-1.6.2.min.js
+        /lib/jquery/jquery.hoverIntent.min.js
+        /lib/jquery/jquery.coda-slider.min.js
+        /lib/jquery/jquery.easing.min.js
+        /lib/jquery/jquery.browser.min.js
+        /lib/jquery/jquery.init.js
+    {/minify_includes}
     <link href="/css/print.css" rel="stylesheet" type="text/css" media="print" />
-    <script src="/lib/inhouse/javascript.js" type="text/javascript"></script>
-    <script src="/lib/jquery/jquery-1.6.2.min.js" type="text/javascript"></script>
-    <script src="/lib/jquery/jquery.hoverIntent.min.js" type="text/javascript"></script>
-    <script src="/lib/jquery/jquery.coda-slider.min.js" type="text/javascript"></script>
-    <script src="/lib/jquery/jquery.easing.min.js" type="text/javascript"></script>
-    <script src="/lib/jquery/jquery.browser.min.js" type="text/javascript"></script>
-    <script src="/lib/jquery/jquery.init.js" type="text/javascript"></script>
 {if $node->name==contact}
     <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
 {/if}
