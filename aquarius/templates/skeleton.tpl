@@ -2,12 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>aquarius bootstrap theme</title>
+    <title>{transform function='strip_tags'}{strip}
+    {block name='title'}
+        {load node=root var=root}
+        {if $content->htmltitle}{$content->htmltitle}{else}{$root->htmltitle} | {nodepath_html_title exclude="1,"}{/if}
+    {/block}
+    {/strip}{/transform}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="{getfield node=$node field='metadescription' inherit=true}" />
+    <meta name="keywords" content="{getfield node=$node field='metakeywords' inherit=true}" />
+    <meta name="author" content="aquaverde.ch" />
+    <meta name="generator" content="CMS aquarius {$smarty.const.AQUARIUS_VERSION}" />
 
-    <!-- Le styles -->
     <link href="/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/form.css" rel="stylesheet">
@@ -16,6 +22,11 @@
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
+
+<script>
+    jQuery('a.gallery').colorbox();
+</script>
+
     {/literal}
     </style>
     <link href="/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
@@ -36,8 +47,9 @@
   <body>
 
     {block name=body}{/block}
+    <script src="/lib/bootstrap/js/jquery.js"></script>    
     <script src="/lib/inhouse/javascript.js"></script>
-    <script src="/lib/bootstrap/js/jquery.js"></script>
+    <script src="/lib/jquery/jquery.colorbox.js"></script>
     <script src="/lib/bootstrap/js/bootstrap-transition.js"></script>
     <script src="/lib/bootstrap/js/bootstrap-alert.js"></script>
     <script src="/lib/bootstrap/js/bootstrap-modal.js"></script>
@@ -51,6 +63,7 @@
     <script src="/lib/bootstrap/js/bootstrap-carousel.js"></script>
     <script src="/lib/bootstrap/js/bootstrap-typeahead.js"></script>
     {block name=javascript}{/block}
+    <script src="/lib/jquery/jquery.init.js"></script>
     
   </body>
 </html>
