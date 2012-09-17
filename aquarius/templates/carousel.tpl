@@ -3,7 +3,7 @@
     <div class="row-fluid">
         <h1>{$title2|default:$title}{edit}</h1>
         {$text}
-        <div id="myCarousel" class="carousel slide span8">
+        <div id="myCarousel" class="carousel slide">
             <!-- Carousel items -->
             <div class="carousel-inner">
                 {foreach from=$pictures item=picture name=loop}

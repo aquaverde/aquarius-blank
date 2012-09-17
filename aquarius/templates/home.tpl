@@ -1,9 +1,9 @@
 {extends main.tpl}
 {block name=content}      
     <div class="hero-unit">
-        <h1>{$title}</h1>
+        <h1>{$title2|default:$title}{edit}</h1>
         {$text}    
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+        <p>{link node=$pointer class="btn btn-primary btn-large"}Learn more &raquo;{/link}</p>
     </div>
     <div class="row-fluid">
         {list childrenof=news limit=3}
