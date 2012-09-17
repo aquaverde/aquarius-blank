@@ -1,16 +1,21 @@
 {extends main.tpl}
-{block name='content'}    
-    <div id="leftCol">
-        <h1>{$title2|default:$title}{edit}</h1>
-        <ul class="news">
-            {list childrenof=news}
-                <li>
-                    <a name="item{$item.node->id}"></a>
-                    {if $item.content->date}<span class="date">{$item.content->date|date_format}</span>{/if}
-                    <h3>{$item.content->title}{edit node=$entry}</h3>
-                    {$item.content->text}
-                </li>
-            {/list}
-        </ul>
+{block name='content'}
+    <h1>{$title2|default:$title}{edit}</h1>
+    {$text}
+    <div class="accordion" id="accordion2">
+        {list childrenof=news}
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse{$index}">
+                    {$title}
+                  </a>
+                </div>
+                <div id="collapse{$index}" class="accordion-body collapse{if $first} in{/if}">
+                  <div class="accordion-inner">
+                    {$text}
+                  </div>
+                </div>
+            </div>
+        {/list}
     </div>
 {/block}
