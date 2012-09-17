@@ -1,4 +1,4 @@
-# Blank website using the aquarius CMS
+# Blank website using the aquarius CMS based on twitter bootstrap
 
 This is a template that can be used to develop a website using the [aquarius CMS](http://aquarius-cms.com) developed by [aquaverde GmbH](http://aquaverde.ch).
 
