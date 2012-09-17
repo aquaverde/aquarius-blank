@@ -1,42 +1,69 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"> 
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
     <title>{transform function='strip_tags'}{strip}
     {block name='title'}
         {load node=root var=root}
         {if $content->htmltitle}{$content->htmltitle}{else}{$root->htmltitle} | {nodepath_html_title exclude="1,"}{/if}
     {/block}
     {/strip}{/transform}</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Content-Language" content="{$lg}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{getfield node=$node field='metadescription' inherit=true}" />
     <meta name="keywords" content="{getfield node=$node field='metakeywords' inherit=true}" />
-    <meta name="robots" content="index,follow" />
-    <meta name="revisit-after" content="3 days" />
-    <meta name="robots" content="all" />
     <meta name="author" content="aquaverde.ch" />
     <meta name="generator" content="CMS aquarius {$smarty.const.AQUARIUS_VERSION}" />
-    <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico" />
-    <link type="image/png" rel="icon" href="/favicon.png" />
-    {minify_includes}
-        /css/global.css
-        /css/form.css
-        /lib/inhouse/javascript.js
-        /lib/jquery/jquery-1.6.2.min.js
-        /lib/jquery/jquery.hoverIntent.min.js
-        /lib/jquery/jquery.coda-slider.min.js
-        /lib/jquery/jquery.easing.min.js
-        /lib/jquery/jquery.browser.min.js
-        /lib/jquery/jquery.init.js
-    {/minify_includes}
-    <link href="/css/print.css" rel="stylesheet" type="text/css" media="print" />
-{if $node->name==contact}
-    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
-{/if}
-</head>
-<body>
-{block name=body}{/block}
-{$root->googleanalytics}
-</body>
+
+    <link href="/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/form.css" rel="stylesheet">
+    <style>
+    {literal}
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+
+<script>
+    jQuery('a.gallery').colorbox();
+</script>
+
+    {/literal}
+    </style>
+    <link href="/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/lib/bootstrap/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/lib/bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/lib/bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/lib/bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/lib/bootstrap/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    {block name=body}{/block}
+    <script src="/lib/bootstrap/js/jquery.js"></script>    
+    <script src="/lib/inhouse/javascript.js"></script>
+    <script src="/lib/jquery/jquery.colorbox.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap-button.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap-typeahead.js"></script>
+    {block name=javascript}{/block}
+    <script src="/lib/jquery/jquery.init.js"></script>
+    
+  </body>
 </html>

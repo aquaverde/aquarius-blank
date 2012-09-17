@@ -2,7 +2,7 @@
 {block name='content'}
 
 {literal}
-<script type="text/javascript">
+<script>
 	$(document).ready(function() {
 		var m = $("#map")[0];
 		var myLatlng = new google.maps.LatLng{/literal}({$latLng_x},{$latLng_y}){literal};
@@ -37,8 +37,9 @@
 </script>
 {/literal}
 
-<div id="leftCol">
-    <div class="address">
+<div class="row">
+
+    <div class="span4">
         <h1>{$title2|default:$title}{edit}</h1>
         <p><strong>{$company}</strong><br />
         {$street}<br />
@@ -47,7 +48,14 @@
         {$fax}</p>
         <p>{$email|email}</p>
     </div>
-    <div id="map"></div>
+    <div class="span8">
+        <div id="map"></div>
+    </div>
+
 </div>
 
+{/block}
+
+{block name=javascript}
+<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
 {/block}
