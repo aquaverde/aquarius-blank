@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{$lg}">
   <head>
     <meta charset="utf-8">
     <title>{transform function='strip_tags'}{strip}
@@ -15,17 +15,15 @@
     <meta name="generator" content="CMS aquarius {$smarty.const.AQUARIUS_VERSION}" />
 
     <link href="/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="/lib/colorbox/colorbox.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/form.css" rel="stylesheet">
-    <link href="/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114-precomposed.png">
@@ -36,6 +34,7 @@
   <body>
 
     {block name=body}{/block}
+    
     <script src="/lib/bootstrap/js/jquery.js"></script>    
     <script src="/lib/inhouse/javascript.js"></script>
     <script src="/lib/colorbox/jquery.colorbox.js"></script>
