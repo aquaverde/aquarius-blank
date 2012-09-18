@@ -1,4 +1,4 @@
-<div class="navbar navbar navbar-fixed-top">
+<div class="navbar">
   <div class="navbar-inner">
     <div class="container">
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -6,11 +6,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-        {load node=root var=root}
-        {link node=root class=brand}{$root->title}{/link}
         <div class="nav-collapse collapse">
             <ul class="nav">
-              {list childrenof=root filter="has menu_position main"}
+                {list childrenof=root filter="has menu_position main"}
                     {loadnodes childrenof=$item.node var=subitems honor_show_in_menu=true}                
                     {if $subitems|@count}
                         <li class="dropdown">
@@ -23,8 +21,8 @@
                     {else}
                         <li{if $active} class="active"{/if}>{link node=$item.node}{$title}{/link}
                     {/if}
-                </li>
-              {/list}
+                    </li>
+                {/list}
             </ul>            
         </div>
         <div class="nav-collapse collapse pull-right">
