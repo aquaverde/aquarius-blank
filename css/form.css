@@ -29,8 +29,8 @@
 #form input[type=text], #form textarea, #form select {  }
 
 /* error colors */
-#form .checkerror, #form span.errorVisible { border-color: #f00 !important; }
-#form label.checkerror, #form span.errorVisible { color: #f00 !important; }
+#form .checkerror, #form span.errorVisible { border-color: #f93 !important; }
+#form label.checkerror, #form span.errorVisible { color: #f93 !important; }
 
 /* submit button */
 #form input[type=submit] {  }
