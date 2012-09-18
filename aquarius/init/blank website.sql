@@ -83,9 +83,9 @@ CREATE TABLE `content_field` (
   KEY `contentid` (`content_id`),
   KEY `weight_index` (`weight`),
   KEY `name_index` (`name`)
-) ENGINE=MyISAM AUTO_INCREMENT=20320 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=20419 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Table `content_field`: 316 rows / 5 fields 
+-- Table `content_field`: 248 rows / 5 fields 
 INSERT INTO `content_field` VALUES
   (20319, 46, "picture", 0, "")
 , (20317, 46, "function", 0, "")
@@ -143,57 +143,6 @@ INSERT INTO `content_field` VALUES
 , (19320, 17, "metadescription", 0, "")
 , (19321, 17, "metakeywords", 0, "")
 , (19322, 17, "urltitle", 0, "")
-, (19584, 18, "email_confirmation_sender", 0, "")
-, (19324, 18, "title2", 0, "")
-, (19325, 18, "htmltitle", 0, "")
-, (19326, 18, "metakeywords", 0, "")
-, (19327, 18, "metadescription", 0, "")
-, (19328, 18, "urltitle", 0, "")
-, (19330, 18, "title2", 0, "")
-, (19331, 18, "htmltitle", 0, "")
-, (19332, 18, "metakeywords", 0, "")
-, (19333, 18, "metadescription", 0, "")
-, (19334, 18, "urltitle", 0, "")
-, (19565, 18, "email_subject", 0, "")
-, (19581, 19, "email_thanx", 0, "")
-, (19340, 18, "email_confirmation_sender", 0, "")
-, (19341, 18, "email_confirmation_subject", 0, "")
-, (19342, 18, "email_confirmation_text", 0, "")
-, (19343, 18, "htmltitle", 0, "")
-, (19344, 18, "metadescription", 0, "")
-, (19345, 18, "metakeywords", 0, "")
-, (19346, 18, "urltitle", 0, "")
-, (19583, 19, "send_confirmation_mail", 0, "")
-, (19580, 19, "email_subject", 0, "")
-, (19579, 19, "target_email", 0, "")
-, (19562, 18, "title", 0, "")
-, (19578, 18, "target_email", 0, "")
-, (19354, 18, "email_confirmation_sender", 0, "")
-, (19355, 19, "email_confirmation_sender", 0, "")
-, (19356, 19, "email_confirmation_subject", 0, "")
-, (19357, 19, "email_confirmation_text", 0, "")
-, (19358, 19, "htmltitle", 0, "")
-, (19359, 19, "metadescription", 0, "")
-, (19360, 19, "metakeywords", 0, "")
-, (19361, 19, "urltitle", 0, "")
-, (19577, 19, "title", 0, "")
-, (19369, 18, "email_confirmation_sender", 0, "")
-, (19370, 19, "email_confirmation_sender", 0, "")
-, (19371, 19, "email_confirmation_subject", 0, "")
-, (19372, 19, "email_confirmation_text", 0, "")
-, (19373, 19, "htmltitle", 0, "")
-, (19374, 19, "metadescription", 0, "")
-, (19375, 19, "metakeywords", 0, "")
-, (19376, 19, "urltitle", 0, "")
-, (19566, 18, "email_thanx", 0, "")
-, (19384, 18, "email_confirmation_sender", 0, "")
-, (19385, 19, "email_confirmation_sender", 0, "")
-, (19386, 18, "email_confirmation_subject", 0, "")
-, (19387, 18, "email_confirmation_text", 0, "")
-, (19388, 18, "htmltitle", 0, "")
-, (19389, 18, "metadescription", 0, "")
-, (19390, 18, "metakeywords", 0, "")
-, (19391, 18, "urltitle", 0, "")
 , (20285, 22, "menu_position", 0, "")
 , (20268, 34, "pictures", 3, "")
 , (20269, 40, "pictures", 3, "")
@@ -242,10 +191,10 @@ INSERT INTO `content_field` VALUES
 , (19899, 25, "menu_position", 0, "")
 , (19898, 25, "title", 0, "")
 , (19909, 26, "summary", 0, "")
-, (19908, 30, "date", 0, "")
+, (20407, 37, "latLng_x", 0, "")
 , (19906, 26, "title", 0, "")
 , (19904, 27, "summary", 0, "")
-, (19903, 29, "date", 0, "")
+, (20354, 29, "summary", 0, "")
 , (19901, 27, "title", 0, "")
 , (19510, 28, "title", 0, "")
 , (19505, 28, "title2", 0, "")
@@ -258,96 +207,78 @@ INSERT INTO `content_field` VALUES
 , (19513, 28, "metadescription", 0, "")
 , (19514, 28, "metakeywords", 0, "")
 , (19515, 28, "urltitle", 0, "")
-, (19523, 29, "text", 0, "")
-, (19902, 27, "date", 0, "")
-, (19520, 29, "title", 0, "")
-, (19531, 30, "text", 0, "")
-, (19907, 26, "date", 0, "")
-, (19528, 30, "title", 0, "")
-, (19582, 18, "send_confirmation_mail", 0, "")
-, (19539, 18, "email_confirmation_sender", 0, "")
-, (19540, 19, "email_confirmation_sender", 0, "")
-, (19541, 18, "email_confirmation_subject", 0, "")
-, (19542, 18, "email_confirmation_text", 0, "")
-, (19543, 18, "htmltitle", 0, "")
-, (19544, 18, "metadescription", 0, "")
-, (19545, 18, "metakeywords", 0, "")
-, (19546, 18, "urltitle", 0, "")
-, (19554, 18, "email_confirmation_sender", 0, "")
-, (19555, 19, "email_confirmation_sender", 0, "")
-, (19556, 19, "email_confirmation_subject", 0, "")
-, (19557, 19, "email_confirmation_text", 0, "")
-, (19558, 19, "htmltitle", 0, "")
-, (19559, 19, "metadescription", 0, "")
-, (19560, 19, "metakeywords", 0, "")
-, (19561, 19, "urltitle", 0, "")
-, (19569, 18, "email_confirmation_sender", 0, "")
-, (19570, 19, "email_confirmation_sender", 0, "")
-, (19571, 18, "email_confirmation_subject", 0, "")
-, (19572, 18, "email_confirmation_text", 0, "")
-, (19573, 18, "htmltitle", 0, "")
-, (19574, 18, "metadescription", 0, "")
-, (19575, 18, "metakeywords", 0, "")
-, (19576, 18, "urltitle", 0, "")
-, (19585, 19, "email_confirmation_sender", 0, "")
-, (19586, 19, "email_confirmation_subject", 0, "")
-, (19587, 19, "email_confirmation_text", 0, "")
-, (19588, 19, "htmltitle", 0, "")
-, (19589, 19, "metadescription", 0, "")
-, (19590, 19, "metakeywords", 0, "")
-, (19591, 19, "urltitle", 0, "")
+, (20353, 29, "date", 0, "")
+, (20352, 27, "date", 0, "")
+, (20351, 29, "title", 0, "")
+, (20361, 26, "date", 0, "")
+, (20405, 37, "email", 0, "")
+, (20360, 30, "title", 0, "")
+, (20362, 30, "date", 0, "")
+, (20363, 30, "summary", 0, "")
+, (20364, 30, "text", 0, "")
+, (20417, 9, "menu_position", 0, "")
+, (20355, 29, "text", 0, "")
+, (20409, 37, "latLng_y", 0, "")
+, (20411, 37, "menu_position", 0, "")
+, (20410, 38, "latLng_y", 0, "")
+, (20412, 38, "menu_position", 0, "")
+, (20350, 19, "send_confirmation_mail", 0, "")
+, (20348, 18, "email_thanx", 0, "")
+, (20347, 18, "email_subject", 0, "")
+, (20346, 19, "target_email", 0, "")
+, (20344, 18, "title", 0, "")
+, (20349, 18, "send_confirmation_mail", 0, "")
+, (20341, 19, "email_thanx", 0, "")
+, (20340, 19, "email_subject", 0, "")
+, (20345, 18, "target_email", 0, "")
+, (20337, 19, "title", 0, "")
 , (19740, 32, "title2", 0, "")
 , (19605, 32, "title2", 0, "")
-, (20036, 37, "email", 0, "")
-, (20037, 38, "email", 0, "")
-, (20039, 38, "latLng_x", 0, "")
+, (20408, 38, "latLng_x", 0, "")
+, (20403, 37, "fax", 0, "")
 , (19624, 32, "htmltitle", 0, "")
 , (19625, 32, "metadescription", 0, "")
 , (19626, 32, "metakeywords", 0, "")
 , (19627, 32, "urltitle", 0, "")
 , (19629, 32, "title2", 0, "")
-, (20034, 37, "fax", 0, "")
-, (20035, 38, "fax", 0, "")
-, (20043, 38, "menu_position", 0, "")
+, (20406, 38, "email", 0, "")
+, (20401, 37, "phone", 0, "")
 , (19648, 32, "htmltitle", 0, "")
 , (19649, 32, "metadescription", 0, "")
 , (19650, 32, "metakeywords", 0, "")
 , (19651, 32, "urltitle", 0, "")
-, (20141, 9, "menu_position", 0, "")
-, (20134, 20, "text", 0, "")
-, (20133, 20, "title2", 0, "")
-, (20142, 20, "menu_position", 0, "")
-, (20140, 9, "pointer", 0, "")
-, (20139, 9, "text", 0, "")
-, (20138, 9, "title2", 0, "")
-, (20032, 37, "phone", 0, "")
-, (20033, 38, "phone", 0, "")
+, (20418, 20, "menu_position", 0, "")
+, (20368, 20, "pointer", 0, "")
+, (20367, 20, "text", 0, "")
+, (20416, 9, "pointer", 0, "")
+, (20415, 9, "text", 0, "")
+, (20414, 9, "title2", 0, "")
+, (20404, 38, "fax", 0, "")
+, (20399, 37, "city", 0, "")
 , (20262, 34, "pictures", 0, "")
 , (19690, 32, "title2", 0, "")
 , (19765, 32, "title2", 0, "")
-, (20042, 37, "menu_position", 0, "")
-, (20030, 37, "city", 0, "")
-, (20031, 38, "city", 0, "")
+, (20402, 38, "phone", 0, "")
+, (20400, 38, "city", 0, "")
+, (20397, 37, "street", 0, "")
 , (20279, 40, "menu_position", 0, "")
 , (19710, 32, "htmltitle", 0, "")
 , (19711, 32, "metadescription", 0, "")
 , (19712, 32, "metakeywords", 0, "")
 , (19713, 32, "urltitle", 0, "")
-, (20040, 37, "latLng_y", 0, "")
-, (20041, 38, "latLng_y", 0, "")
-, (20029, 38, "street", 0, "")
-, (20038, 37, "latLng_x", 0, "")
-, (20028, 37, "street", 0, "")
-, (20027, 38, "company", 0, "")
-, (20025, 38, "text", 0, "")
+, (20398, 38, "street", 0, "")
+, (20395, 37, "company", 0, "")
+, (20396, 38, "company", 0, "")
+, (20373, 38, "text", 0, "")
+, (20372, 38, "title2", 0, "")
 , (20276, 34, "pictures", 7, "")
 , (20257, 39, "pictures", 1, "")
 , (20255, 39, "pictures", 0, "")
 , (19764, 32, "title", 0, "")
 , (19883, 32, "phone", 0, "")
-, (20026, 37, "company", 0, "")
-, (20005, 37, "text", 0, "")
-, (20004, 37, "title", 0, "")
+, (20394, 37, "text", 0, "")
+, (20393, 37, "title2", 0, "")
+, (20392, 37, "title", 0, "")
 , (20256, 33, "pictures", 1, "")
 , (19760, 32, "htmltitle", 0, "")
 , (19761, 32, "metadescription", 0, "")
@@ -358,7 +289,7 @@ INSERT INTO `content_field` VALUES
 , (19879, 32, "street", 0, "")
 , (19881, 32, "city", 0, "")
 , (20213, 40, "text", 0, "")
-, (20024, 38, "title", 0, "")
+, (20371, 38, "title", 0, "")
 , (19887, 32, "email", 0, "")
 , (19889, 32, "latLng_x", 0, "")
 , (19891, 32, "latLng_y", 0, "")
@@ -401,8 +332,9 @@ INSERT INTO `content_field` VALUES
 , (20304, 42, "picture", 0, "")
 , (20282, 15, "pictures", 0, "")
 , (20284, 15, "menu_position", 0, "")
-, (20137, 9, "title", 0, "")
-, (20132, 20, "title", 0, "")
+, (20413, 9, "title", 0, "")
+, (20366, 20, "title2", 0, "")
+, (20365, 20, "title", 0, "")
 ;
 
 -- Table `content_field_value`: structure 
@@ -417,25 +349,24 @@ CREATE TABLE `content_field_value` (
   KEY `content_field_id` (`content_field_id`),
   KEY `value_index` (`value`(8)),
   FULLTEXT KEY `value` (`value`)
-) ENGINE=MyISAM AUTO_INCREMENT=12632 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=12731 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Table `content_field_value`: 156 rows / 4 fields 
+-- Table `content_field_value`: 161 rows / 4 fields 
 INSERT INTO `content_field_value` VALUES
   (12424, 20144, "0", "aquarius-cms")
 , (11926, 19309, "0", "404")
 , (11927, 19310, "0", "Die gewünschte Seite konnte nicht gefunden werden.")
 , (11928, 19311, "0", "<p>\r\n    Das von Ihnen gesuchte Dokument wurde möglicherweise umbenannt, verschoben oder gelöscht.</p>\r\n<p>\r\n    <a href=\"aquarius-node:8\">Zur Einstiegseite</a></p>\r\n")
-, (12041, 19566, "0", "Das Formular wurde erfolgreich verschickt. Vielen Dank für Ihre Anfrage.")
 , (11929, 19316, "0", "404")
 , (11930, 19317, "0", "Page introuvable ")
 , (11931, 19318, "0", "<p>\r\n    La page demandée n\'existe plus ou n\'a jamais existé sous cette adresse.</p>\r\n<p>\r\n    <a href=\"aquarius-node:8\">Consulter la page d\'accueil</a></p>\r\n")
-, (12049, 19582, "0", "0")
-, (12040, 19565, "0", "Kontaktformular")
-, (12045, 19578, "0", "test@aquaverde.ch")
-, (12046, 19579, "0", "test@aquaverde.ch")
-, (12047, 19580, "0", "Formulaire de contact")
-, (12048, 19581, "0", "Le formulaire a été envoyé avec succès. Merci pour votre demande.")
-, (12037, 19562, "0", "Kontaktformular")
+, (12660, 20348, "0", "Das Formular wurde erfolgreich verschickt. Vielen Dank für Ihre Anfrage.")
+, (12659, 20347, "0", "Kontaktformular")
+, (12658, 20346, "0", "test@aquaverde.ch")
+, (12653, 20341, "0", "Le formulaire a été envoyé avec succès. Merci pour votre demande.")
+, (12657, 20345, "0", "test@aquaverde.ch")
+, (12652, 20340, "0", "Formulaire de contact")
+, (12656, 20344, "0", "Kontaktformular")
 , (12105, 19845, "0", "aquarius-cms.ch")
 , (11969, 19433, "0", "Basic")
 , (11970, 19435, "0", "<p>\r\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n")
@@ -444,25 +375,25 @@ INSERT INTO `content_field_value` VALUES
 , (11977, 19461, "0", "Impressum")
 , (11978, 19463, "0", "<p>\r\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n")
 , (12156, 19900, "0", "main")
-, (12164, 19908, "0", "1316642400")
+, (12674, 20362, "0", "1316642400")
 , (12165, 19909, "0", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
 , (12166, 19910, "0", "<p>\r\n	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n")
 , (12162, 19906, "0", "News 1")
 , (12160, 19904, "0", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
 , (12161, 19905, "0", "<p>\r\n	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n")
-, (12159, 19903, "0", "1316728800")
 , (12157, 19901, "0", "News 2")
 , (12006, 19510, "0", "News")
-, (12011, 19520, "0", "News 2")
-, (12158, 19902, "0", "1316728800")
-, (12014, 19523, "0", "<p>\r\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n")
-, (12019, 19528, "0", "News 1")
-, (12163, 19907, "0", "1316642400")
-, (12022, 19531, "0", "<p>\r\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n")
-, (12044, 19577, "0", "Formulaire de contact")
-, (12050, 19583, "0", "0")
-, (12413, 20133, "0", "Bienvenue")
-, (12414, 20134, "0", "<p>\r\n	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n")
+, (12664, 20352, "0", "1316728800")
+, (12663, 20351, "0", "News 2")
+, (12665, 20353, "0", "1316728800")
+, (12666, 20354, "0", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+, (12667, 20355, "0", "<p>\r\n	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n")
+, (12675, 20363, "0", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+, (12673, 20361, "0", "1316642400")
+, (12676, 20364, "0", "<p>\r\n	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n")
+, (12649, 20337, "0", "Formulaire de contact")
+, (12729, 20417, "0", "main")
+, (12679, 20367, "0", "<p>\r\n	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n")
 , (12067, 19764, "0", "Contact")
 , (12068, 19766, "0", "<p>\r\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n")
 , (12141, 19885, "0", "032 322 99 80")
@@ -483,9 +414,7 @@ INSERT INTO `content_field_value` VALUES
 , (12306, 20046, "0", "main")
 , (12423, 20143, "0", "aquarius-cms.ch")
 , (12106, 19846, "0", "aquarius-cms")
-, (12420, 20140, "0", "21")
-, (12418, 20138, "0", "Willkommen")
-, (12419, 20139, "0", "<p>\r\n	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n")
+, (12727, 20415, "0", "<p>\r\n	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n")
 , (12154, 19898, "0", "News")
 , (12155, 19899, "0", "main")
 , (12143, 19887, "0", "test@aquaverde.ch")
@@ -506,28 +435,20 @@ INSERT INTO `content_field_value` VALUES
 , (12589, 20277, "file", "grey.png")
 , (12583, 20271, "file", "grey.png")
 , (12582, 20270, "file", "grey.png")
-, (12295, 20035, "0", "032 322 99 80")
-, (12293, 20033, "0", "032 322 99 80")
-, (12291, 20031, "0", "2502 Bienne")
-, (12265, 20005, "0", "<p>\r\n	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n")
-, (12264, 20004, "0", "Karte")
-, (12289, 20029, "0", "Falkenstrasse 44")
-, (12287, 20027, "0", "aquaverde")
-, (12286, 20026, "0", "aquaverde")
-, (12288, 20028, "0", "Falkenstrasse 44")
-, (12290, 20030, "0", "2502 Bienne")
-, (12292, 20032, "0", "032 322 99 80")
-, (12294, 20034, "0", "032 322 99 80")
-, (12296, 20036, "0", "test@aquaverde.ch")
-, (12298, 20038, "0", "47.140187")
-, (12300, 20040, "0", "7.243773")
-, (12302, 20042, "0", "main")
-, (12285, 20025, "0", "<p>\r\n	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n")
-, (12284, 20024, "0", "Carte")
-, (12297, 20037, "0", "test@aquaverde.ch")
-, (12299, 20039, "0", "47.140187")
-, (12301, 20041, "0", "7.243773")
-, (12303, 20043, "0", "main")
+, (12715, 20403, "0", "032 322 99 80")
+, (12713, 20401, "0", "032 322 99 80")
+, (12711, 20399, "0", "2502 Bienne")
+, (12708, 20396, "0", "aquaverde")
+, (12710, 20398, "0", "Falkenstrasse 44")
+, (12712, 20400, "0", "2502 Bienne")
+, (12709, 20397, "0", "Falkenstrasse 44")
+, (12707, 20395, "0", "aquaverde")
+, (12706, 20394, "0", "<p>\r\n	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n")
+, (12705, 20393, "0", "Unsere Adresse")
+, (12704, 20392, "0", "Karte")
+, (12685, 20373, "0", "<p>\r\n	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n")
+, (12684, 20372, "0", "Nous trouver")
+, (12683, 20371, "0", "Carte")
 , (12588, 20276, "file", "grey.png")
 , (12587, 20275, "file", "grey.png")
 , (12581, 20269, "file", "grey.png")
@@ -544,10 +465,9 @@ INSERT INTO `content_field_value` VALUES
 , (12592, 20280, "0", "Basic")
 , (12594, 20282, "file", "grey.png")
 , (12596, 20284, "0", "main")
-, (12417, 20137, "0", "Home")
-, (12412, 20132, "0", "Accueil")
-, (12421, 20141, "0", "main")
-, (12422, 20142, "0", "main")
+, (12680, 20368, "0", "22")
+, (12728, 20416, "0", "21")
+, (12726, 20414, "0", "aquarius cms")
 , (12580, 20268, "file", "grey.png")
 , (12579, 20267, "file", "grey.png")
 , (12574, 20264, "file", "grey.png")
@@ -577,6 +497,23 @@ INSERT INTO `content_field_value` VALUES
 , (12628, 20316, "0", "Tirhir")
 , (12626, 20314, "0", "Mic")
 , (12631, 20319, "file", "face.png")
+, (12730, 20418, "0", "main")
+, (12725, 20413, "0", "Home")
+, (12678, 20366, "0", "aquarius cms")
+, (12677, 20365, "0", "Accueil")
+, (12661, 20349, "0", "0")
+, (12662, 20350, "0", "0")
+, (12672, 20360, "0", "News 1")
+, (12717, 20405, "0", "test@aquaverde.ch")
+, (12719, 20407, "0", "47.140187")
+, (12721, 20409, "0", "7.243773")
+, (12723, 20411, "0", "main")
+, (12714, 20402, "0", "032 322 99 80")
+, (12716, 20404, "0", "032 322 99 80")
+, (12718, 20406, "0", "test@aquaverde.ch")
+, (12720, 20408, "0", "47.140187")
+, (12722, 20410, "0", "7.243773")
+, (12724, 20412, "0", "main")
 ;
 
 -- Table `content_mapping`: structure 
@@ -631,7 +568,7 @@ CREATE TABLE `cron` (
 
 -- Table `cron`: 1 rows / 3 fields 
 INSERT INTO `cron` VALUES
-  ("daily", 1347872688, 1347872688)
+  ("daily", 1347958134, 1347958134)
 ;
 
 -- Table `directory_properties`: structure 
@@ -691,11 +628,12 @@ CREATE TABLE `dynform_block_data` (
   `lg` char(2) COLLATE utf8_unicode_ci NOT NULL,
   `name` mediumtext COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Table `dynform_block_data`: 1 rows / 4 fields 
+-- Table `dynform_block_data`: 2 rows / 4 fields 
 INSERT INTO `dynform_block_data` VALUES
   (4, 2, "fr", "Formulaire de contact")
+, (6, 2, "de", "Kontaktformular")
 ;
 
 -- Table `dynform_entry`: structure 
@@ -709,15 +647,17 @@ CREATE TABLE `dynform_entry` (
   PRIMARY KEY (`id`),
   KEY `dynform_id` (`dynform_id`),
   KEY `lg` (`lg`)
-) ENGINE=MyISAM AUTO_INCREMENT=51 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=53 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Table `dynform_entry`: 5 rows / 5 fields 
+-- Table `dynform_entry`: 7 rows / 5 fields 
 INSERT INTO `dynform_entry` VALUES
   (46, 2, "de", "2012-09-17 11:52:56", "Kontaktformular")
 , (47, 2, "de", "2012-09-17 12:03:12", "Kontaktformular")
 , (48, 2, "de", "2012-09-17 14:24:58", "Kontaktformular")
 , (49, 2, "de", "2012-09-17 14:26:39", "Kontaktformular")
 , (50, 2, "de", "2012-09-17 14:27:13", "Kontaktformular")
+, (51, 2, "fr", "2012-09-18 11:28:29", "Formulaire de contact")
+, (52, 2, "fr", "2012-09-18 11:28:34", "Formulaire de contact")
 ;
 
 -- Table `dynform_entry_data`: structure 
@@ -731,9 +671,9 @@ CREATE TABLE `dynform_entry_data` (
   PRIMARY KEY (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=144 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=158 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Table `dynform_entry_data`: 35 rows / 5 fields 
+-- Table `dynform_entry_data`: 49 rows / 5 fields 
 INSERT INTO `dynform_entry_data` VALUES
   (109, 46, 9, "Name", "")
 , (110, 46, 10, "Vorname", "")
@@ -770,6 +710,20 @@ INSERT INTO `dynform_entry_data` VALUES
 , (141, 50, 13, "Telefon", "")
 , (142, 50, 14, "E-Mail", "")
 , (143, 50, 15, "Mitteilung", "")
+, (144, 51, 9, "Nom", "")
+, (145, 51, 10, "Prénom", "")
+, (146, 51, 11, "Rue, Nr.", "")
+, (147, 51, 12, "NPA/Lieu", "")
+, (148, 51, 13, "Téléphone", "")
+, (149, 51, 14, "E-Mail", "")
+, (150, 51, 15, "Communication", "")
+, (151, 52, 9, "Nom", "")
+, (152, 52, 10, "Prénom", "")
+, (153, 52, 11, "Rue, Nr.", "")
+, (154, 52, 12, "NPA/Lieu", "")
+, (155, 52, 13, "Téléphone", "")
+, (156, 52, 14, "E-Mail", "")
+, (157, 52, 15, "Communication", "")
 ;
 
 -- Table `dynform_field`: structure 
@@ -983,7 +937,7 @@ INSERT INTO `fieldgroup` VALUES
 , (2, "goog", "Google Maps", 2, 50)
 , (3, "extended", "tab_extended", 2, 80)
 , (4, "SEO", "Metadaten", 2, 90)
-, (5, "pictures", "Bilder/Dateien", 2, 30)
+, (5, "pictures", "Medien", 2, 30)
 , (6, "Formular", "Formular", 2, 20)
 , (13, "background", "Hintergrundbild", 2, 70)
 , (11, "gallery", "Galerie", 2, 40)
@@ -997,7 +951,7 @@ CREATE TABLE `fieldgroup_entry` (
   `fieldgroup_id` int(11) NOT NULL,
   `selector` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`fieldgroup_entry_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=332 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=348 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- Table `fieldgroup_entry`: 38 rows / 3 fields 
 INSERT INTO `fieldgroup_entry` VALUES
@@ -1008,15 +962,13 @@ INSERT INTO `fieldgroup_entry` VALUES
 , (189, 4, "meta*")
 , (188, 4, "urltitle")
 , (325, 3, "dynform")
-, (169, 5, "mp3")
-, (168, 5, "picture*")
+, (347, 5, "file*")
 , (324, 3, "googlemaps")
 , (316, 6, "*greet*")
 , (315, 6, "*mail*")
 , (314, 6, "*subject*")
 , (313, 6, "*thanx*")
-, (170, 5, "flash*")
-, (171, 5, "file*")
+, (344, 5, "picture*")
 , (191, 4, "googleanalytics")
 , (323, 3, "menu_position")
 , (322, 3, "new")
@@ -1039,6 +991,8 @@ INSERT INTO `fieldgroup_entry` VALUES
 , (329, 3, "award_picture")
 , (330, 3, "archive")
 , (331, 3, "*publish*")
+, (346, 5, "flash*")
+, (345, 5, "mp3")
 ;
 
 -- Table `fieldgroup_selection`: structure 
@@ -1052,7 +1006,7 @@ CREATE TABLE `fieldgroup_selection` (
 
 -- Table `fieldgroup_selection`: 3 rows / 3 fields 
 INSERT INTO `fieldgroup_selection` VALUES
-  (1, "Standard tabs", 0)
+  (1, "Standard tabs", 1)
 , (2, "Simple", 0)
 , (3, "Dynform", 0)
 ;
@@ -1065,9 +1019,9 @@ CREATE TABLE `fieldgroup_selection_entry` (
   `fieldgroup_id` int(11) NOT NULL,
   PRIMARY KEY (`fieldgroup_selection_entry_id`),
   UNIQUE KEY `fieldgroup_selection_id` (`fieldgroup_selection_id`,`fieldgroup_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Table `fieldgroup_selection_entry`: 10 rows / 3 fields 
+-- Table `fieldgroup_selection_entry`: 11 rows / 3 fields 
 INSERT INTO `fieldgroup_selection_entry` VALUES
   (1, 1, 1)
 , (2, 1, 2)
@@ -1079,6 +1033,7 @@ INSERT INTO `fieldgroup_selection_entry` VALUES
 , (15, 1, 14)
 , (17, 3, 6)
 , (18, 3, 4)
+, (19, 1, 5)
 ;
 
 -- Table `form`: structure 
@@ -1102,21 +1057,21 @@ CREATE TABLE `form` (
 INSERT INTO `form` VALUES
   (101, "Home", "home", "", 0, "", 1, 0, 0)
 , (112, "Root", "", "", 0, "all", 1, 1, 0)
-, (247, "Contact", "contact", "", 0, "", 1, 1, 0)
-, (156, "Fall through all", "", "", 0, "all", 0, 1, 0)
+, (247, "Contact", "contact", "", 0, "", 1, 0, 0)
+, (156, "Fall through all", "", "", 0, "all", 0, 0, 0)
 , (159, "Hide in Menu", "", "", 0, "parent", 0, 0, 0)
-, (163, "Dynform_node", "contactform", "", 0, "", 1, 3, 0)
+, (163, "Dynform_node", "contactform", "", 0, "", 1, 0, 0)
 , (236, "News", "news", "date", 1, "parent", 0, 1, 0)
 , (166, "Sitemap", "sitemap", "", 0, "none", 1, null, 0)
 , (245, "404", "not_found", "", 0, "", 0, 0, 0)
-, (237, "News overview", "news_overview", "", 0, "", 1, 1, 0)
-, (208, "Basic", "basic", "", 0, "", 1, 1, 0)
+, (237, "News overview", "news_overview", "", 0, "", 1, 0, 0)
+, (208, "Basic", "basic", "", 0, "", 1, 0, 0)
 , (242, "Download overview", "download.tpl", "", 0, "", 1, 1, 0)
 , (243, "Download", "", "", 0, "parent", 0, 1, 0)
 , (244, "Search", "search", "", 0, "", 0, 1, 0)
-, (248, "Carousel", "carousel", "", 0, "", 1, 1, 0)
-, (249, "Gallery", "gallery", "", 0, "", 1, 1, 0)
-, (250, "Team overview", "team", "", 0, "", 1, 1, 0)
+, (248, "Carousel", "carousel", "", 0, "", 1, 0, 0)
+, (249, "Gallery", "gallery", "", 0, "", 1, 0, 0)
+, (250, "Team overview", "team", "", 0, "", 1, 0, 0)
 , (251, "Team entry", "", "", 0, "parent", 0, 2, 0)
 ;
 
@@ -1146,7 +1101,7 @@ CREATE TABLE `form_field` (
   KEY `language_independent` (`language_independent`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1822 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Table `form_field`: 126 rows / 14 fields 
+-- Table `form_field`: 124 rows / 14 fields 
 INSERT INTO `form_field` VALUES
   (1083, "urltitle", "", 0, 0, "", "", 140, "urltitle", 163, 0, 0, 0, 2)
 , (750, "metakeywords", "", 2, 0, "", "", 220, "mle", 112, 0, 0, 0, 1)
@@ -1235,8 +1190,6 @@ INSERT INTO `form_field` VALUES
 , (1737, "htmltitle", "", 0, 0, "", "", 200, "ef", 244, 0, 0, 0, 2)
 , (1773, "urltitle", "", 0, 0, "", "", 230, "urltitle", 247, 0, 0, 0, 2)
 , (1820, "title2", "", 0, 0, "", "", 10, "ef", 101, 0, 0, 0, 2)
-, (1781, "picture_header", "", 0, 0, "pictures/header", "", 240, "file", 237, 1, 1, 0, 2)
-, (1782, "picture_header", "", 0, 0, "pictures/header", "", 240, "file", 247, 1, 1, 0, 2)
 , (1783, "menu_position", "Menu Position", 0, 0, "none=,main=main,meta=meta,footer=footer", "", 250, "sf", 101, 0, 1, 0, 1)
 , (1784, "menu_position", "Menu Position", 0, 0, "none=,main=main,meta=meta,footer=footer", "", 240, "sf", 208, 0, 1, 0, 2)
 , (1785, "menu_position", "Menu Position", 0, 0, "none=,main=main,meta=meta,footer=footer", "", 250, "sf", 237, 0, 1, 0, 2)
@@ -1287,9 +1240,9 @@ CREATE TABLE `journal` (
   KEY `content_id` (`content_id`),
   KEY `user_id` (`user_id`),
   KEY `last_change` (`last_change`)
-) ENGINE=MyISAM AUTO_INCREMENT=2078 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2090 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Table `journal`: 53 rows / 4 fields 
+-- Table `journal`: 65 rows / 4 fields 
 INSERT INTO `journal` VALUES
   (2025, 15, 16, 1347874569)
 , (2026, 9, 16, 1347874573)
@@ -1344,6 +1297,18 @@ INSERT INTO `journal` VALUES
 , (2075, 44, 17, 1347913062)
 , (2076, 45, 17, 1347913081)
 , (2077, 46, 17, 1347913087)
+, (2078, 9, 18, 1347968512)
+, (2079, 9, 18, 1347968520)
+, (2080, 20, 18, 1347968531)
+, (2081, 19, 18, 1347968663)
+, (2082, 18, 18, 1347968680)
+, (2083, 29, 18, 1347968718)
+, (2084, 30, 18, 1347968722)
+, (2085, 30, 18, 1347968726)
+, (2086, 20, 18, 1347968748)
+, (2087, 38, 18, 1347968909)
+, (2088, 37, 18, 1347968918)
+, (2089, 9, 18, 1347969690)
 ;
 
 -- Table `languages`: structure 
@@ -1466,10 +1431,10 @@ INSERT INTO `node` VALUES
 , (18, "news", 1, 237, 0, 236, 1, 30, 0, "0000-00-00 00:00:00", 1316696711, 1, "News", 1, 208, 236, 237, 1, 1, 0, 5, 9)
 , (19, null, 18, null, null, null, 0, 10, 0, "0000-00-00 00:00:00", null, 1, "News 1", 1, 208, 236, 236, 2, 0, 0, 6, 6)
 , (20, null, 18, null, null, null, 0, 20, 0, "0000-00-00 00:00:00", null, 1, "News 2", 1, 208, 236, 236, 2, 0, 0, 8, 8)
-, (21, "contact", 1, 156, 0, 163, 1, 70, 0, "0000-00-00 00:00:00", 1316696720, 1, "Kontakt", 1, 208, 163, 156, 1, 1, 0, 21, 25)
+, (21, "contact", 1, 156, 0, 163, 1, 70, 0, "0000-00-00 00:00:00", 1347966877, 1, "Kontakt", 1, 208, 163, 156, 1, 1, 0, 21, 25)
 , (22, null, 1, 248, null, null, 0, 50, 0, "0000-00-00 00:00:00", null, 1, "Carousel", 1, 208, 208, 248, 1, 0, 0, 17, 17)
 , (23, null, 1, 249, null, null, 0, 60, 0, "0000-00-00 00:00:00", null, 1, "Gallery", 1, 208, 208, 249, 1, 0, 0, 19, 19)
-, (24, "contact", 21, 247, 0, 0, 0, 10, 0, "0000-00-00 00:00:00", 1347885123, 1, "Karte", 1, 208, 163, 247, 2, 0, 0, 22, 22)
+, (24, "address", 21, 247, 0, 0, 0, 10, 0, "0000-00-00 00:00:00", 1347966915, 1, "Karte", 1, 208, 163, 247, 2, 0, 0, 22, 22)
 , (26, "", 1, 250, 0, 251, 1, 40, 0, "0000-00-00 00:00:00", 1347908829, 1, "Team", 1, 208, 251, 250, 1, 1, 0, 11, 15)
 , (27, null, 26, null, null, null, 0, 10, 0, "0000-00-00 00:00:00", null, 1, null, 1, 208, 251, 251, 2, 0, 0, 12, 12)
 , (28, null, 26, null, null, null, 0, 20, 0, "0000-00-00 00:00:00", null, 1, " (Kopie)", 1, 208, 251, 251, 2, 0, 0, 14, 14)
@@ -1484,9 +1449,9 @@ CREATE TABLE `update_log` (
   `module` text COLLATE utf8_unicode_ci NOT NULL,
   `success` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Table `update_log`: 11 rows / 5 fields 
+-- Table `update_log`: 12 rows / 5 fields 
 INSERT INTO `update_log` VALUES
   (2, 1316529362, "2011.05.06 add permission fields to user table.sql", "core", null)
 , (4, 1316677225, "2011 Create dynform tables.sql", "dynform", null)
@@ -1499,6 +1464,7 @@ INSERT INTO `update_log` VALUES
 , (13, 1347872669, "*** example content.sql", "core", 1)
 , (14, 1347872674, "2012.07.16 add content field cache.sql", "core", 1)
 , (15, 1347905915, "*** bootstrap_example.sql", "core", 1)
+, (16, 1347958113, "*** example bootstrap.sql", "core", 1)
 ;
 
 -- Table `users`: structure 
@@ -1519,7 +1485,7 @@ CREATE TABLE `users` (
   UNIQUE KEY `name` (`name`),
   KEY `password` (`password`),
   KEY `active` (`active`)
-) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 -- Table `users2languages`: structure 
