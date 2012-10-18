@@ -8,7 +8,7 @@
         <div class="span4">
             {if $pictures}
                 {foreach from=$pictures item=picture name=loop}
-                    <img class="thumbnail" src="{resize image=$picture.file w=330}" alt="{$picture.legend}">
+                    <img class="thumbnail pull-right" src="{resize image=$picture.file w=330}" alt="{$picture.legend}">
                 {/foreach}
             {/if}
         </div>
