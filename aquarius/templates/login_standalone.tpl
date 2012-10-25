@@ -41,7 +41,7 @@
                             <div class="controls">
                                 <input type="hidden" name="fe_passwordhash" value=""  />
                                 <input type="hidden" name="challenge" value="{$session_id}"  />                        
-                                <button type="submit" value="Login" name="backend_login" class="btn">{wording Password}</button>
+                                <button type="submit" value="Login" name="backend_login" class="btn">{wording Login}</button>
                             </div>    
                         </div>
                     </form>
