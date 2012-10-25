@@ -19,6 +19,7 @@
     <link href="/lib/colorbox/colorbox.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/form.css" rel="stylesheet">
+    {block name=style}{/block}
 
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>

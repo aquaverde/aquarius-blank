@@ -5,7 +5,7 @@
             <h1>{$restriction_node->title}</h1>
             {$restriction_node->text1}
             {literal}
-            <script language="javascript" type="text/javascript" src="/md5.js"></script>
+            <script language="javascript" type="text/javascript" src="/lib/inhouse/md5.js"></script>
             <script><!--
                 function encryptPassword() {
                         var form = document.login;
