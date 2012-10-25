@@ -25,7 +25,7 @@
         <div class="content">
             <div class="row">
               <div class="login-form">
-                  <h4>{wording Password}</h4>
+                  <h4>{wording Login}</h4>
                     <form action="" method="post" name="login" id="loginform" enctype="multipart/form-data" class="form" onsubmit="encryptPassword();">
                         <div class="control-group">
                             <div class="controls">
