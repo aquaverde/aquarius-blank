@@ -77,9 +77,11 @@
 
 /* clear objects */
 
-.clear:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
- 
-.clear { display: inline-block; } html[xmlns] .clear { display: block; } * html .clear { height: 1%; }
+.clear:before, .clear:after { content: ""; display: table; }
+
+.clear:after { clear: both; }
+
+.clear { zoom: 1; }
 
 /* browser dependent styles */
 
