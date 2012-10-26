@@ -1,6 +1,8 @@
 {extends skeleton.tpl}
 
 {block name=style}
+    <link href="/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <style>
         {literal}
         html, body { background: #f2f2f2;  }
