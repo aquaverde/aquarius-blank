@@ -11,14 +11,6 @@
         .container > .content { background-color: #fff; padding: 20px; margin: 0 -20px; -webkit-border-radius: 10px 10px 10px 10px; -moz-border-radius: 10px 10px 10px 10px; border-radius: 10px 10px 10px 10px; -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15); -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15); box-shadow: 0 1px 2px rgba(0,0,0,.15);}
         .login-form { margin-left: 65px; }
     </style>
-    <script language="javascript" type="text/javascript" src="/lib/inhouse/md5.js"></script>
-    <script>
-        function encryptPassword() {
-                var form = document.login;
-                form.fe_passwordhash.value = MD5(MD5(form.password.value)+form.challenge.value);
-                form.password.value = form.password.value.replace(/./g, '*');
-        }
-    </script>
     {/literal}
 {/block}
 
@@ -28,7 +20,7 @@
             <div class="row">
               <div class="login-form">
                   <h4>{wording Login}</h4>
-                    <form action="" method="post" name="login" id="loginform" enctype="multipart/form-data" class="form" onsubmit="encryptPassword();">
+                    <form action="" method="post" name="login" id="loginform" enctype="multipart/form-data" class="form">
                         <div class="control-group">
                             <div class="controls">
                                 <input type="text" name="fe_username" id="login" placeholder="{wording Username}">
@@ -40,9 +32,7 @@
                             </div>
                         </div>            
                         <div class="control-group">
-                            <div class="controls">
-                                <input type="hidden" name="fe_passwordhash" value=""  />
-                                <input type="hidden" name="challenge" value="{$session_id}"  />                        
+                            <div class="controls">               
                                 <button type="submit" value="Login" name="backend_login" class="btn">{wording Login}</button>
                             </div>    
                         </div>
