@@ -1,4 +1,3 @@
-
 body { padding-bottom: 60px; }
 
 #header { }
@@ -6,3 +5,5 @@ body { padding-bottom: 60px; }
 .logo { margin: 20px 0 15px 0 }
 
 #footer { line-height: 40px; }
+
+#map_canvas { width: 100%; height: 450px;} 

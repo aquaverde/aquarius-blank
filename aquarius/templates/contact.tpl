@@ -1,10 +1,7 @@
 {extends main.tpl}
 {block name='content'}
 
-
-
 <div class="row">
-
     <div class="span4">
         <h1>{$title2|default:$title}{edit}</h1>
         <p><strong>{$company}</strong><br />
@@ -15,18 +12,18 @@
         <p>{$email|email}</p>
     </div>
     <div class="span8">
-        <div id="map"></div>
+        <div id="map_canvas"></div>
     </div>
-
 </div>
 
 {/block}
 
 {block name=javascript}
     {literal}
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
     <script>
         $(document).ready(function() {
-            var m = $("#map")[0];
+            var m = $("#map_canvas")[0];
             var myLatlng = new google.maps.LatLng{/literal}({$latLng_x},{$latLng_y}){literal};
             var myOptions = {
                 zoom: 11,
@@ -58,5 +55,4 @@
         });
     </script>
     {/literal}
-    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
 {/block}

@@ -21,6 +21,9 @@
     <link href="/css/form.css" rel="stylesheet">
     {block name=style}{/block}
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    {block name=javascript}{/block}
+
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -30,29 +33,15 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57-precomposed.png">
+    
   </head>
-
   <body>
 
     {block name=body}{/block}
-    
-    <script src="/lib/bootstrap/js/jquery.js"></script>    
+    <script src="/lib/bootstrap/js/bootstrap.js"></script>    
+    <script src="/lib/jquery/jquery.init.js"></script>    
     <script src="/lib/inhouse/javascript.js"></script>
     <script src="/lib/colorbox/jquery.colorbox.js"></script>
-    <script src="/lib/bootstrap/js/bootstrap-transition.js"></script>
-    <script src="/lib/bootstrap/js/bootstrap-alert.js"></script>
-    <script src="/lib/bootstrap/js/bootstrap-modal.js"></script>
-    <script src="/lib/bootstrap/js/bootstrap-dropdown.js"></script>
-    <script src="/lib/bootstrap/js/bootstrap-scrollspy.js"></script>
-    <script src="/lib/bootstrap/js/bootstrap-tab.js"></script>
-    <script src="/lib/bootstrap/js/bootstrap-tooltip.js"></script>
-    <script src="/lib/bootstrap/js/bootstrap-popover.js"></script>
-    <script src="/lib/bootstrap/js/bootstrap-button.js"></script>
-    <script src="/lib/bootstrap/js/bootstrap-collapse.js"></script>
-    <script src="/lib/bootstrap/js/bootstrap-carousel.js"></script>
-    <script src="/lib/bootstrap/js/bootstrap-typeahead.js"></script>
-    {block name=javascript}{/block}
-    <script src="/lib/jquery/jquery.init.js"></script>
     
   </body>
 </html>
