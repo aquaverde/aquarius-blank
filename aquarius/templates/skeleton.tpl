@@ -42,6 +42,20 @@
     <script src="/lib/jquery/jquery.init.js"></script>    
     <script src="/lib/inhouse/javascript.js"></script>
     <script src="/lib/colorbox/jquery.colorbox.js"></script>
+
+    {if $root->googleanalytics}
+        {literal}
+            <script>
+                $(window).load(function() {
+                    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+                    $.ajax({
+                        url: gaJsHost+'google-analytics.com/ga.js', type: 'get', dataType: 'script', cache: true,
+                        success: function() { try { _gat._getTracker("{/literal}{$root->googleanalytics}{literal}")._trackPageview(); } catch(err) {} }
+                    });
+                });
+            </script>
+        {/literal}
+    {/if}
     
   </body>
 </html>
