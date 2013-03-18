@@ -18,12 +18,15 @@
 			{else}
 				<div class="search">
 				{foreach from=$result.items item=item}
-					{link node=$item.node}{$item.node->get_contenttitle()|strip_tags}{/link}{edit node=$item.node}<br/>
-					{if $item.content->shorttext}{$item.content->shorttext|strip_tags|truncate:200}<br/>
-					{elseif $item.content->text}{$item.content->text|strip_tags|truncate:200}<br/>
-					{elseif $item.content->text1}{$item.content->text1|strip_tags|truncate:200}<br/>
-					{/if}
-					<div style="height:5px"></div>
+				    {if $item.node->active()}
+				        {assign var=hasresult value=1}
+                        {link node=$item.node}{$item.node->get_contenttitle()|strip_tags}{/link}{edit node=$item.node}<br/>
+                        {if $item.content->shorttext}{$item.content->shorttext|strip_tags|truncate:200}<br/>
+                        {elseif $item.content->text}{$item.content->text|strip_tags|truncate:200}<br/>
+                        {elseif $item.content->text1}{$item.content->text1|strip_tags|truncate:200}<br/>
+                        {/if}
+                        <div style="height:5px"></div>
+                    {/if}
 				{/foreach}
 				</div>
 			{/if}
@@ -32,6 +35,9 @@
 				{assign var="start" value=$result.next}
 				<br/><a href="{href node=$node varparams="search,start"}">&gt; {wording more results}</a>
 			{/if}
+            {if !$hasresult}
+				<p>{wording found nothing}</p>
+            {/if}
 		{/if}
 	</div>
 </div>
