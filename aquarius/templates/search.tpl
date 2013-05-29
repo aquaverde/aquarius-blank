@@ -41,5 +41,4 @@
 		{/if}
 	</div>
 </div>
-{* TEST *}
 {/block}
