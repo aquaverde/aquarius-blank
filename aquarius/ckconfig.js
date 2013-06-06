@@ -8,12 +8,12 @@ CKEDITOR.editorConfig = function( config ) {
 
     /* minimal */
     config.toolbar = [
-        ['Bold','Italic','-','BulletedList','-','iLink','Link','Unlink','-','PasteText','PasteFromWord','RemoveFormat','-','Maximize','Source']
+        ['Bold','Italic','BulletedList','iLink','Link','Unlink','Image','PasteText','PasteFromWord','RemoveFormat','Maximize','Source']
     ] ;
 
     /* standard
     config.toolbar = [
-        ['Bold','Italic','-','BulletedList','-','iLink','Link','Unlink','-','PasteText','PasteFromWord','RemoveFormat','-','Maximize','Source']
+        ['Bold','Italic','BulletedList','iLink','Link','Unlink','PasteText','PasteFromWord','RemoveFormat','Maximize','Source']
     ] ;
     */
 
