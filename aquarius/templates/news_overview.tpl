@@ -2,16 +2,18 @@
 {block name='content'}
     <h1>{$title2|default:$title}{edit}</h1>
     {$text}
-    <div class="accordion" id="accordion2">
+    <div class="panel-group" id="accordion">
         {list childrenof=$node}
-            <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse{$index}">
-                    {$title}
-                  </a>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse{$index}">
+                            {$title}
+                        </a>
+                    </h4>
                 </div>
-                <div id="collapse{$index}" class="accordion-body collapse{if $first} in{/if}">
-                  <div class="accordion-inner">
+                <div id="collapse{$index}" class="panel-collapse collapse{if $first} in{/if}">
+                  <div class="panel-body">
                     {$text}
                   </div>
                 </div>

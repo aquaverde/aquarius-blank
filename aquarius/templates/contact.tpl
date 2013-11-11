@@ -2,16 +2,16 @@
 {block name='content'}
 
 <div class="row">
-    <div class="span4">
+    <div class="col-md-4">
         <h1>{$title2|default:$title}{edit}</h1>
         <p><strong>{$company}</strong><br />
         {$street}<br />
         {$city}</p>
         <p>{$phone}<br />
         {$fax}</p>
-        <p>{$email|email}</p>
+        <p>{$email}</p>
     </div>
-    <div class="span8">
+    <div class="col-md-8">
         <div id="map_canvas"></div>
     </div>
 </div>
