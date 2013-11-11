@@ -1,8 +1,8 @@
 {extends main.tpl}
 {block name='content'}
+    <h1>{$title2|default:$title}{edit}</h1>
     <div class="row">
         <div class="col-md-4">
-            <h1>{$title2|default:$title}{edit}</h1>
             <p><strong>{$company}</strong><br />
             {$street}<br />
             {$city}</p>
