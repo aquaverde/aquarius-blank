@@ -10,7 +10,7 @@
             <div class="col-md-4">
                 <h2>{$title}{edit node=$item.node}</h2> 
                 <p>{$summary}</p>
-                <p><a href="{href node=$item.node}" class="btn btn-default">{wording View details} &raquo;</a></p>
+                <p><a href="{href node=$item.node}" class="btn btn-lg btn-primary">{wording View details} &raquo;</a></p>
             </div>
         {/list}
     </div>

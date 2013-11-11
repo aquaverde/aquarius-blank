@@ -1,7 +1,7 @@
 <hr>
 <div class="footer">
-    {usecontent node=address}
-        <div class="pull-left"><strong>{$company}</strong>, {$street}, {$city}, {$phone}, {$email}{edit node=address}</div>
+    {usecontent node=root}
+        <div class="pull-left">{$footer}</div>
     {/usecontent}
     <ul class="nav navbar pull-right">
         {list childrenof=root filter="has menu_position footer"}

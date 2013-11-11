@@ -1,24 +1,22 @@
 {extends main.tpl}
 {block name='content'}
-
-<div class="row">
-    <div class="col-md-4">
-        <h1>{$title2|default:$title}{edit}</h1>
-        <p><strong>{$company}</strong><br />
-        {$street}<br />
-        {$city}</p>
-        <p>{$phone}<br />
-        {$fax}</p>
-        <p>{$email}</p>
+    <div class="row">
+        <div class="col-md-4">
+            <h1>{$title2|default:$title}{edit}</h1>
+            <p><strong>{$company}</strong><br />
+            {$street}<br />
+            {$city}</p>
+            <p>{$phone}<br />
+            {$fax}</p>
+            <p>{$email}</p>
+        </div>
+        <div class="col-md-8">
+            <div id="map_canvas"></div>
+        </div>
     </div>
-    <div class="col-md-8">
-        <div id="map_canvas"></div>
-    </div>
-</div>
-
 {/block}
 
-{block name=javascript}
+{block name=js}
     {literal}
     <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
     <script>
