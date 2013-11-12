@@ -1227,6 +1227,7 @@ INSERT INTO `form_field` VALUES
 , (1818, "email", "", 0, 0, "", "", 40, "ef", 251, 0, 1, 0, 2)
 , (1819, "picture", "", 0, 0, "pictures/team", "", 50, "file", 251, 0, 1, 0, 2)
 , (1821, "pointer", "Link", 0, 0, "", "", 30, "pointing", 101, 0, 0, 0, 2)
+, (1822, "footer", "Footer", 0, 0, "", "", 310, "ef", 112, 0, 0, 0, 2)
 ;
 
 -- Table `journal`: structure 
