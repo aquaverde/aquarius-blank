@@ -13,36 +13,25 @@
     <meta name="keywords" content="{getfield node=$node field='metakeywords' inherit=true}" />
     <meta name="author" content="aquaverde.ch" />
     <meta name="generator" content="CMS aquarius {$smarty.const.AQUARIUS_VERSION}" />
-
-    <link href="/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="/lib/colorbox/colorbox.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/form.css" rel="stylesheet">
     {block name=style}{/block}
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    {block name=javascript}{/block}
-
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57-precomposed.png">
-    
   </head>
   <body>
-
     {block name=body}{/block}
-    <script src="/lib/bootstrap/js/bootstrap.js"></script>    
-    <script src="/lib/jquery/jquery.init.js"></script>    
-    <script src="/lib/inhouse/javascript.js"></script>
-    <script src="/lib/colorbox/jquery.colorbox.js"></script>
-
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/utilities.js"></script>
+    {block name=js}{/block}
+    <script src="/js/init.js"></script>
     {if $root->googleanalytics}
         {literal}
             <script>
