@@ -3,6 +3,9 @@
 This is a template that can be used to develop a website using the [aquarius CMS](http://aquarius-cms.com) developed by [aquaverde GmbH](http://aquaverde.ch).
 The frontend ist based on Twitter-Bootstrap.
 
+# Easy Installation
+[Download installer here](http://www.aquarius-cms.com/en/download.html)
+
 # Installation
 
 0. Change to your webroot (this example uses /var/www)
@@ -13,24 +16,31 @@ The frontend ist based on Twitter-Bootstrap.
 
         git clone --recursive git://github.com/aquaverde/aquarius-blank.git .
 
-2. Enable maintenance mode by running
+2. Download dependencies
 
-        aquarius/core/bin/enable_maintenance 127.0.0.1
+        cd aquarius/core
+        make
+
+3. Enable maintenance mode by running
+
+        bin/enable_maintenance 127.0.0.1
    
-   This assumes that you'll be connecting from localhost. Instead, you may
-   create the file AQUARIUS_MAINTENANCE.CASUAL
+   This assumes that you'll be connecting from localhost. Substitute the
+   appropriate IP address you will be connecting from. Setup will not allow other
+   addresses to connect.
+   
+   When there is no danger of other people accessing the setup, you can enable
+   it by updating the timestamp in the AQUARIUS_MAINTENANCE.CASUAL file.
    
         touch aquarius/AQUARIUS_MAINTENANCE.CASUAL
 
-   This too enables maintenance mode, allowing any hosts to run maintenance
-   operations. Only use this on hosts that do not allow public access. Both
-   methods will allow maintenance operations during two hours.
+   Both methods will allow maintenance operations for two hours.
 
 4. Ensure the Webserver has write-permissions on the aquarius-directory. This
    depends on your setup. It's easiest when the user you use to administer the
    files is the same as the webserver user.
 
-3. Browse to http://localhost/aquarius/admin/setup.php to start setup.
+5. Browse to http://localhost/aquarius/admin/setup.php to start setup.
 
 
 # Changing the site
@@ -54,10 +64,6 @@ repository as explained above.
 
         cd /var/www
 
-2. Generate the adminer DB interface (optional, but handy when you have no other access to the DB)
-
-        aquarius/core/bin/compile_adminer
-    
 3. Generate the installer pack
 
         aquarius/core/bin/packer all
