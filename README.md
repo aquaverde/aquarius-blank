@@ -3,6 +3,9 @@
 This is a template that can be used to develop a website using the [aquarius CMS](http://aquarius-cms.com) developed by [aquaverde GmbH](http://aquaverde.ch).
 The frontend ist based on Twitter-Bootstrap.
 
+# Easy Installation
+[Download installer here](http://www.aquarius-cms.com/en/download.html)
+
 # Installation
 
 0. Change to your webroot (this example uses /var/www)

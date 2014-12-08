@@ -1,115 +1,81 @@
+/* --------------------- form */
 
-/*  
+#form { width: 100%; margin: 1.400em 0 0; }
 
-	form.css for dynform module
+#form fieldset { width: 100%; border: none; margin: 0; padding: 0; }
 
-	cms aquarius 3.x, aquaverde 2011
-	
-	
-	note: "jquery.browser.min.js" is required for best cross-platfrom results.
+#form fieldset + fieldset { margin: 2.000em 0 0; }
 
-*/
+#form fieldset legend { margin: 10px 0 0; font: normal 1.125em/1.500em 'Oxygen', sans-serif; letter-spacing: 0.020em; color: #232424; }
 
+#form fieldset span.text { display: block; margin: 0 0 10px; }
 
-/* --------------------- DEFAULTS: for fast css config, change this section only */
+#form span.field { position: relative; display: block; width: inherit; }
 
-/* form width & offset */
-#form { width: 490px; margin: 20px 0; }
+#form span.field + span.field { margin: 10px 0 0; }
 
-/* title font & offset */
-#form div.blockTitle { font-family: inherit; font-size: 18px; line-height: 18px; font-weight: normal; color: #000; margin-bottom: 1em !important; }
+#form input, #form select, #form textarea, #form .errorMessage { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-/* form font */
-#form div, #form span, #form label, #form input, #form select, #form textarea {  }
+#form span.singleline input, #form span.email input, #form span.number input { width: inherit; border: 1px #f6f6f6 solid; padding: 5px; background: #f6f6f6; color: #000; }
 
-/* form rows offset */
-#form div.blockTitle, #form div.blockRow { margin: 8px 0; } 
+#form span.radio, #form span.checkbox { padding: 4px 0; }
 
-/* form elements colors */
-#form input[type=text], #form textarea, #form select {  }
+#form span.radio label, #form span.checkbox label { display: block; }
 
-/* error colors */
-#form .checkerror, #form span.errorVisible { border-color: #f93 !important; }
-#form label.checkerror, #form span.errorVisible { color: #f93 !important; }
+#form span.radio label input, #form span.checkbox label input { position: relative; top: -1px; left: 0; }
 
-/* submit button */
-#form input[type=submit] {  }
-#form input[type=submit]:hover {  }
+#form span.submit input { border: 0 none; background: #f6f6f6; color: #232424; padding: 6px 20px; margin: 2.000em 0 0; text-align: center; }
 
+#form span.submit input:hover { border: 0 none; background: #f6f6f6; color: #e92e00; }
 
-/* --------------------- LAYOUT: label & form elements FLOATED (without break line) */
+#form textarea { width: inherit; height: 148px; min-height: 148px; border: 1px #f6f6f6 solid; padding: 5px; background: #f6f6f6; color: #000; }
 
-#form div.formBlock, #form div.formBlock div.blockTitle, #form div.formBlock div.blockRow { width: 100%; vertical-align: top; }
+#form select { width: inherit; height: auto; padding: 5px; background: #f6f6f6; color: #000; }
 
-#form div.formBlock div.blockRow + div.blockTitle { margin-top: 2em; }
+#form span.pulldown div.styledSelect { position: relative; width: 100%; overflow: hidden; border: 1px #f6f6f6 solid; background: #f6f6f6; cursor: pointer; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-#form div.formBlock div.blockRow label { width: 28%; padding: 2px 2% 2px 0; display: inline-block; float: left; }
+#form span.pulldown div.styledSelect:after { content: ""; position: absolute; top: 16px; right: 14px; width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 6px solid #232424; }
 
-#form div.formBlock div.blockRow div.formInput { width: 70%; float: right; }
+#form span.pulldown div.styledSelect:hover:after { border-top-color: #e92e00; }
 
-#form div.formBlock div.blockRow div.formInput label { width: 100% !important; padding: 2px 0; }
+#form span.pulldown div.styledSelect select { position: relative; background: transparent; width: 100%; padding: 0 6px; line-height: 34px; height: 34px; border: 0; border-radius: 0; -webkit-appearance: none; -moz-appearance: none; cursor: pointer; z-index: 1; text-indent: 0.01px; text-overflow: ''; }
 
-#form div.formBlock div.blockRow div.formInput .checkerror { border-width: 1px; border-style: solid; }
- 
-#form div.formBlock div.blockRow div.formInput input[type=text] { width: 100%; padding: 1px 0; border-width: 1px; border-style: solid; }
+#form span.pulldown div.styledSelect select::-ms-expand { display: none; }
 
-#form div.formBlock div.blockRow div.formInput input[type=checkbox] { position: relative; top: 2px; float: left; border: none; }
+@-moz-document url-prefix() { #form span.pulldown div.styledSelect select { padding: 2px 3px; } select:-moz-focusring { color: transparent; text-shadow: 0 0 0 #000; } }
 
-#form div.formBlock div.blockRow div.formInput input[type=radio] { position: relative; top: 2px; float: left; border: none;}
+#form span.pulldown select[size], #form span.pulldown select[multiple], #form span.pulldown select.multiple { width: 100%; height: auto; border: none; padding: 4px; }
 
-#form div.formBlock div.blockRow div.formInput select { width: 100%; padding: 1px 0; border-width: 1px; border-style: solid; }
+#form span.pulldown select option { line-height: 36px; padding: 6px; cursor: pointer; }
 
-#form div.formBlock div.blockRow div.formInput textarea { width: 100%; min-width: 100%; max-width: 100%; height: 96px; min-height: 96px; padding: 1px 0; border-width: 1px; border-style: solid; }
+#form span.pulldown select.error option, #form select.error option:first-child { color: #222; }
 
-#form div.formBlock div.blockRow div.formInput span.formText { padding: 2px 0; display: block; }
+#form input.error, #form textarea.error, #form span.pulldown.error div.styledSelect { border: 1px #e92e00 solid !important; background: #f6f6f6 !important; }
 
-#form div.formBlock div.blockRow div.formInput span.formText + input { margin-top: 8px; }
+#form span.field.error label { color: #e92e00; }
 
-#form div.formBlock div.formSubmit { padding-left: 30%; }
+#form span.field.error div.errorContainer { position: relative; width: 100%; line-height: 36px; height: 36px; padding: 0 5px; display: block; color: #e92e00; white-space: nowrap; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-#form div.formBlock div.formSubmit input[type=submit] { padding: 2px 7px; cursor: pointer; border-width: 1px; border-style: solid; }
+#form span.required { display: block; margin: 1.4em 0 0; color: #000; }
 
-#form div.formBlock #validateEmail, #form div.formBlock span.errorInvisible { display: none !important; }
+#form div.errorMessage { display: none; width: 100%; line-height: 1.5em; border: 1px #e92e00 solid; padding: 10px 5px; margin: 2.000em 0 0; text-align: center; color: #e92e00; background: #f6f6f6; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-#form div.formBlock #errorMessage { width: 70%; display: block; margin: 0 0 2em 30%; padding: 10px 0; border-width: 1px; border-style: solid; text-align: center; }
+form ::-webkit-input-placeholder { color: #999; }
 
-#form div.formBlock span.pleaseFill { width: 70%; display: block; margin: 0 0 2em 30%; }
+form :-moz-placeholder { color: #222; }
 
-/* clear objects */
+form ::-moz-placeholder { color: #222; }
 
-.clear:before, .clear:after { content: ""; display: table; }
+form :-ms-input-placeholder { color: #222; }
 
-.clear:after { clear: both; }
+form .placeholder { color: #222; }
 
-.clear { zoom: 1; }
+form .checkerror::-webkit-input-placeholder { color: #fff; }
 
-/* browser dependent styles */
+form .checkerror:-moz-placeholder { color: #fff; }
 
-html.webkit #form div.formBlock div.blockRow div.formInput input[type=radio], html.webkit #form div.formBlock div.blockRow div.formInput input[type=checkbox] { top: 4px; }
+form .checkerror::-moz-placeholder { color: #fff; }
 
-html.msie7 #form div.formBlock div.blockRow div.formInput input[type=radio], html.msie7 #form div.formBlock div.blockRow div.formInput input[type=checkbox] { top: -2px; }
+form .checkerror:-ms-input-placeholder { color: #fff; }
 
-
-/* --------------------- OPTIONS: uncomment following snippets for... */
-
-
-/* ...label & form elements BREAKED (with break line) 
-
-#form div.formBlock div.blockRow label { width: 100%; padding: 2px 0; display: block; }
-
-#form div.formBlock div.blockRow div.formInput { width: 100%; display: block }
-
-#form div.formBlock div.formSubmit { padding-left: 0; }
-
-#form div.formBlock #errorMessage { width: 100%; display: block; margin: 0 0 2em 0; padding: 10px 0; border-width: 1px; border-style: solid; text-align: center; }
-
-#form div.formBlock span.pleaseFill { width: 100%; display: block; margin: 0 0 2em 0; }
-
-*/
-
-
-/* ...checkboxes and radios FLOATED (without break line) 
-
-#form div.formBlock div.blockRow div.formInput label { width: auto !important; float: left; padding: 2px 10px 2px 0; }
-
-*/
+form .checkerror.placeholder { color: #fff !important; }
