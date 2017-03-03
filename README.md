@@ -25,7 +25,7 @@ The frontend ist based on Twitter-Bootstrap.
 
         touch aquarius/SETUP
         
-   When there is no danger of other people accessing the setup, such as local dev installations. Otherwise use `bin/enable_maintenance 127.0.0.1` to allow only a specific IP-Address.
+   This is fine When there is no danger of other people accessing the setup, such as local dev installations. Otherwise use `bin/enable_maintenance 127.0.0.1` to allow only a specific IP-Address.
    Both methods will allow maintenance operations for two hours. After that, run the command again.
 
 4. Ensure the Webserver has write-permissions on the aquarius-directory. This
@@ -33,6 +33,19 @@ The frontend ist based on Twitter-Bootstrap.
    files is the same as the webserver user.
 
 5. Browse to http://localhost/aquarius/admin/setup.php to start setup.
+
+
+# Dev notes
+
+You can run Aquarius from the shell with
+
+        php -S localhost:8000
+
+Enable dev-mode with
+
+        touch aquairus/DEV
+
+this will turn off password-checks and enable verbose error output.
 
 
 # Changing the site
