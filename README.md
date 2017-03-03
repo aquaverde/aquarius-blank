@@ -23,18 +23,10 @@ The frontend ist based on Twitter-Bootstrap.
 
 3. Enable maintenance mode by running
 
-        bin/enable_maintenance 127.0.0.1
-   
-   This assumes that you'll be connecting from localhost. Substitute the
-   appropriate IP address you will be connecting from. Setup will not allow other
-   addresses to connect.
-   
-   When there is no danger of other people accessing the setup, you can enable
-   it by updating the timestamp in the AQUARIUS_MAINTENANCE.CASUAL file.
-   
-        touch aquarius/AQUARIUS_MAINTENANCE.CASUAL
-
-   Both methods will allow maintenance operations for two hours.
+        touch aquarius/SETUP
+        
+   When there is no danger of other people accessing the setup, such as local dev installations. Otherwise use `bin/enable_maintenance 127.0.0.1` to allow only a specific IP-Address.
+   Both methods will allow maintenance operations for two hours. After that, run the command again.
 
 4. Ensure the Webserver has write-permissions on the aquarius-directory. This
    depends on your setup. It's easiest when the user you use to administer the
